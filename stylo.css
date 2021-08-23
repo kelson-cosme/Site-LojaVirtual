@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2? family = Benne & display = swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+/*------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#corpo{
+    color: black;
+    max-width: 1366px;
+    min-width: 360px;
+    margin: auto;
+}
+
+/*Cabeçario ------------------------------*/
+header{
+    background-image: url("/camisa-futebol.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    max-width: 1366px;
+    min-width: 360px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slogan{
+    text-align: center;
+   border-radius: 20px;
+   background-color: #60606091;
+   
+    padding: 20px;
+    width: 60%;
+    height: 20%;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-shadow: black 0.1em 0.1em 0.1em;
+    font-weight: bold;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.774);
+    color: black;
+    position: sticky;
+    top: 0;
+    min-width: 360px;
+    z-index: 1;
+}
+.logo{
+    width: 70px;
+}
+nav{
+    display: flex;
+}
+/*-----------------------------------------------------*/
+/*Menu mobile*/
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: black;
+    margin: 8px;
+}
+/*----------------------------------------------------*/
+.nav-list ul{
+    display: flex;   
+    margin-top: 5px; 
+    font-size: 20px;   
+}
+.nav-list li{
+    list-style-type: none;
+    padding: 20px;
+
+    transition: .4s;
+}
+.nav-list li:hover{
+    background-color: #606060;
+    color: white;
+    border-radius: 50%;
+    text-decoration: underline;
+}
+
+/*-----------------------------------------------------------*/
+.titulo{ /*Titulos*/
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/*layout grid ------------------------------------------------*/
+.item{
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all .2s ease;
+}
+ img{
+    width: 100%;
+    display: block;
+}
+.item:hover{
+    -webkit-transform:scale(1.04); /* Safari and Chrome */
+    -moz-transform:scale(1.04); /* Firefox */
+    -ms-transform:scale(1.04); /* IE 9 */
+    -o-transform:scale(1.04); /* Opera */
+     transform:scale(1.04);
+}
+.lancaFora{
+    margin-top: 5%;
+}
+.lancamentos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1%;
+    grid-gap: 1%;
+}
+
+.item:nth-child(1){
+    grid-row: 1 / 3;
+    margin: 1%;
+}
+.item:nth-child(2){
+    margin: 1% 1% 0 1%;
+
+}
+.item:nth-child(3){
+    grid-column: 2/3;
+    margin: 1%;
+}
+
+
+/*Legenda das fotos --------------------------------------*/
+.item{
+    display: grid;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.item img{
+    grid-column: 1;
+    grid-row: 1/3;
+}
+.item p{
+    background-color: black;
+    padding: 5px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 30px;
+}
+/*-------------------------------------------------------*/
+
+/*roupas*/
+.roupasFora{
+    background-color: white;
+    margin: 1% 1% 0 1%;
+    padding: 0;
+}
+.roupas{
+    text-align: center;
+    border: 1px solid black;
+    max-width: 100%;
+    margin: auto;
+    padding: 15px;
+    margin-top: 30px;
+}
+.listarp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.roupas li{/*Lista das imagens*/
+    width: 22%;
+    margin-bottom: 2%;
+    list-style-type: none;
+}
+.roupas img{ /*tamanho da imagem*/
+    width: 100%;
+    transition: all .2s ease;  /*trasição para crescer  imagem*/
+}
+.roupas img:hover{
+    -webkit-transform:scale(1.04); /* Safari and Chrome */
+    -moz-transform:scale(1.04); /* Firefox */
+    -ms-transform:scale(1.04); /* IE 9 */
+    -o-transform:scale(1.04); /* Opera */
+     transform:scale(1.04);
+}
+.botao{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    font-size:100%;
+    margin: 20px 0;
+
+}
+/*----------------------------------------------------*/
+/*Caracteristica*/
+.caractFora{
+   background-color: #ddd;
+    padding: 5% 0;
+}
+.caracteristica{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+.listacaract{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.listacaract li{
+    width: 19%;
+    text-align: center
+}
+.listacaract p{
+    font-size: 30px;
+
+}
+/*----------------------------------------------------*/
+/*Contato*/
+
+.texto{ /*texto debaixo do titulo*/
+    max-width: 80%;
+    margin: auto;
+    text-align: justify;
+    font-size: 150%;
+    margin-top: 10px;
+}
+.contatoFora{
+
+    margin: 20px ;
+}
+.contato{
+    margin: auto;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.fild{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+textarea{
+    border: 1px solid #ddd;
+}
+/*---------------------------------------------------*/
+/*Rodapé*/
+.rodape{
+    display: flex;
+    background-color: #505050;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listarodape{
+    padding: 20px;
+    color: white;
+    font-size: 100%;
+}
+/*-----------------------------------------------*/
+
+@media screen and (max-width: 1030px){
+    
+    .menu{
+       overflow-x: hidden;
+    }
+    .nav-list ul{
+        position:fixed;
+        top: 52.7px;
+        right: 0;
+        width: auto;
+        height: 92vh;
+        background-color: #23232e;
+        color: white;
+        font-size: 20px;
+        display: block;
+        flex-direction: column;
+        list-style-type: none;
+        width: 100vw;
+        align-items: center; 
+        transform: translateX(100%);
+        transition: 1s;
+        z-index: 1;
+    }
+    .nav-list li{
+        margin-left: 0;
+        padding: 19px;
+        transition: .3s;
+        
+    }
+    .nav-list li:hover{
+        display: block;
+        background-color: #606060;
+        color: white;
+        border-radius: 0;
+        text-decoration: underline;
+        padding: 23px;
+
+    }
+    .mobile-menu{
+        display: block;
+        padding: 10px;
+    }
+
+    .nav-list ul.active {
+        transform: translateX(0);
+    }
+    .roupas li{/*Lista das imagens*/
+        width: 50%;
+        margin-bottom: 2%;
+        list-style-type: none;
+    }
+    .contato{
+        margin: auto;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slogan{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+   
+    .titulo{
+        font-size: 40px;
+    }
+    .listacaract p{
+        font-size: 100%;
+        
+    }
+}
